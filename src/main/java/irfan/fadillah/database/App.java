@@ -15,6 +15,7 @@ public class App {
             System.out.println("5. Product");
             System.out.println("6. Order");
             System.out.println("7. Payment");
+            System.out.println("8. Exit");
             System.out.print("Select an option: ");
 
             int choice = scanner.nextInt();
@@ -35,6 +36,9 @@ public class App {
 //
                 case 4:
                    ProductLine.optionProductLine();
+                    break;
+                case 5:
+                    Product.optionProduct();
                     break;
 //
 //                case 5:
