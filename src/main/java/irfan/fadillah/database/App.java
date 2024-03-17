@@ -40,6 +40,9 @@ public class App {
                 case 5:
                     Product.optionProduct();
                     break;
+                case 6:
+                    Order.optionOrder();
+                    break;
 //
 //                case 5:
 //                    // Exit

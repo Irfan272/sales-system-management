@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 15 Mar 2024 pada 20.24
+-- Waktu pembuatan: 18 Mar 2024 pada 00.26
 -- Versi server: 10.4.27-MariaDB
 -- Versi PHP: 8.1.12
 
@@ -102,6 +102,14 @@ CREATE TABLE `order` (
   `comments` text NOT NULL,
   `id_customers` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `order`
+--
+
+INSERT INTO `order` (`id_order`, `orderDate`, `requiredDate`, `shippedDate`, `status`, `comments`, `id_customers`) VALUES
+(1, '2024-03-15', '2024-03-16', '2024-03-18', 'Shipped', 'mantap', 1),
+(2, '2024-02-02', '2024-02-03', '2024-03-04', 'Shipped', 'nice', 1);
 
 -- --------------------------------------------------------
 
@@ -256,7 +264,7 @@ ALTER TABLE `offices`
 -- AUTO_INCREMENT untuk tabel `order`
 --
 ALTER TABLE `order`
-  MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `orderdetails`
